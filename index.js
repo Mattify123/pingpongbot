@@ -22,7 +22,7 @@ fs.readdir("./commands/", (err, files) => {
 });
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity("!report", {type: "PLAYING"});
+  bot.user.setActivity("!ping", {type: "PLAYING"});
 });
 
 bot.on("message", async message => {
